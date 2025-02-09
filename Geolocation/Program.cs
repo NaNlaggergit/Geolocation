@@ -113,7 +113,7 @@ namespace Geolocation
                 if (string.IsNullOrWhiteSpace(address))
                 {
                     Console.WriteLine("Ошибка: Адресс не может быть пустым");
-                    return;
+                    continue;
                 }
                 await GetCoordinatesFromYandex(address);
                 await GetCoordinatesFromGis(address);
